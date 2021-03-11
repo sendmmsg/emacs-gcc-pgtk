@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:20.10
 WORKDIR /opt
 ENV DEBIAN_FRONTEND=noninteractive
 ENV JOBS=5
