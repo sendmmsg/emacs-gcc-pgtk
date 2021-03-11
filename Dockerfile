@@ -1,4 +1,4 @@
-FROM ubuntu:20.10
+FROM ubuntu:20.04
 WORKDIR /opt
 ENV DEBIAN_FRONTEND=noninteractive
 ENV JOBS=5
@@ -30,7 +30,8 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libjbig-dev \
     libncurses-dev\
     liblcms2-dev\
-    texinfo
+    texinfo \
+    gcc-10
 
 
 # Clone emacs
