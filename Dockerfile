@@ -29,7 +29,7 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libjbig-dev \
     libncurses-dev\
     liblcms2-dev\
-    texinfo 
+    texinfo \
     gcc-11
 
 
