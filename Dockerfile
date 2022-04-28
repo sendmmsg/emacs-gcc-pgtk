@@ -1,4 +1,4 @@
-FROM ubuntu:21.10
+FROM ubuntu:22.04
 WORKDIR /opt
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -39,7 +39,7 @@ RUN update-ca-certificates \
     && mv emacs/* .
 
 # Build
-ENV CC="gcc-10"
+ENV CC="gcc-11"
 RUN ./autogen.sh && ./configure \
     --prefix "/usr/local" \
     --with-native-compilation \
