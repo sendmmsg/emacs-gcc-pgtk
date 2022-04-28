@@ -20,7 +20,7 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libotf-dev \
     libsystemd-dev \
     libjansson-dev \
-    libgccjit-10-dev \
+    libgccjit-11-dev \
     libgif-dev \
     librsvg2-dev  \
     libxml2-dev \
@@ -29,8 +29,8 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libjbig-dev \
     libncurses-dev\
     liblcms2-dev\
-    texinfo \
-    gcc-10
+    texinfo 
+    gcc-11
 
 
 # Clone emacs
